@@ -1,0 +1,63 @@
+.font {
+  font-family: 'Poppins', sans-serif; /* ganti font jadi Poppins, kalau gagal pakai sans-serif */
+}
+
+.section-title {
+  padding-left: 10px;               /* kasih jarak teks dari kiri biar nggak nempel garis */
+  border-left: 4px solid #f2c308;   /* bikin garis tebal di kiri (aksen) */
+}
+
+.logo {
+  display: block;                   /* biar bisa diposisikan (default img = inline) */
+  margin: 20px auto;                /* auto = rata tengah horizontal, 20px jarak atas bawah */
+  max-width: 100px;                 /* batasi lebar maksimum logo */
+}
+
+.judul {
+  color: #47a5ed;                   /* warna teks biru */
+  text-align: center;               /* rata tengah teks */
+}
+
+.keterangan {
+  text-align: center;               /* teks rata tengah */
+  color: dimgrey;                   /* warna abu-abu gelap */
+}
+
+.box {
+  margin: 20px auto;               /* kasih jarak 20px atas-bawah, auto kiri-kanan = ketengah */
+  width: 80%;                       /* lebar box 80% dari layar */
+  padding: 20px;                    /* jarak isi dari tepi box */
+  border: 1px solid #ddd;           /* garis tipis abu di sekeliling box */
+  border-radius: 10px;              /* sudut box melengkung */
+  background-color: #fff;           /* latar belakang putih */
+  box-shadow: 0 4px 8px black;  /*0 = agar bayangan nya tidak pindah 4px = bayangan kebawah 4px 5px = blur 5px*/
+}
+
+.avatar {
+  width: 100px;                     /* lebar foto */
+  height: 100px;                    /* tinggi foto, sama dengan width → bentuk bulat */
+  object-fit: cover;                /* foto dipotong biar penuh tanpa distorsi */
+  border-radius: 50%;               /* bulat sempurna */
+  border: 3px solid #e5e7eb;        /* garis tipis abu di pinggir foto */
+}
+
+.hr {
+  width: 80%;                       /* garis horizontal setengah lebar halaman */
+  margin: 15px auto;                /* rata tengah + jarak 15px atas bawah */
+  border: none;                     /* hilangkan border default <hr> */
+  height: 1px;                      /* ketebalan garis */
+  background-color: #007bff;        /* warna biru */
+  border-radius: 5px;               /* ujung garis agak melengkung */
+}
+
+.back-link {
+  display: inline-block;            /* biar bisa diatur margin, hover dsb */
+  margin-top: 20px;                 /* jarak ke atas */
+  color: #007bff;                   /* teks biru */
+  text-decoration: none;            /* hilangkan garis bawah default link */
+  font-weight: 500;                 /* agak tebal */
+}
+
+.back-link:hover {
+  text-decoration: underline;       /* pas hover muncul garis bawah */
+}

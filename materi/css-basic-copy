@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar CSS Dasar</title>
+    <!-- tag style untuk membuat css internal -->
+    <style>
+      /* komentar pake ctrl -> / */
+      /* ID => dengan simbol # (pagar) */
+      /* CLASS => dengan simbol . (titik) */
+      #box1 {
+        background-color: gold;
+      }
+      .tanggal {
+        color: #c112b2;
+      }
+      .konten {
+        color: rgb(40, 102, 13);
+        font-size: 24px;
+      }
+
+      /* terapkan css ke tag-tag di dalam box2 secara langsung */
+      #box2 {
+        background-color: indigo;
+        color: white;
+        width: 250px;
+        height: 250px;
+        padding: 20px;
+        margin: 50px;
+        border: 4px solid #000000;
+      }
+      #box2 h3 {
+        text-align: center;
+      }
+      #box2 p {
+        font-size: 20px;
+      }
+      #box2 b {
+        font-size: 30px;
+      }
+      /* class .subtitle hanya akan ada di id box2, tidak bisa diakses diluar */
+      #box2 .subtitle {
+        font-size: 20px;
+        color: red;
+      }
+
+      #box3 {
+        width: 300px;
+        height: 200px;
+        background-color: burlywood;
+        transition: transform 0.3s ease-out; /* Transition 'transform' over 0.3 seconds */
+        box-shadow: 5px 5px 10px grey;
+      }
+      #box3 h3 {
+        font-family: 'Courier New', Courier, monospace;
+      }
+      #box3 li {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #box3:hover {
+        transform: translateX(50px); /* Move 20px to the right on hover */
+        background: #c112b2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Belajar CSS Dasar</h1>
+
+    <div id="box1">
+      <h3 class="tanggal">16 September 2025</h3>
+      <p class="konten">Ini pagragraf isinya random aja terserah....</p>
+    </div>
+
+    <div id="box2">
+      <h3>My Profile</h3>
+      <p>Nama: <b>Ujang</b> Sumedang</p>
+      <p>Umur: 17 Tahun</p>
+      <h4 class="subtitle">
+        ini subtitle teks baru, target akan kesini saja, jika ada h4 lain gk
+        akan ngefek lur.
+      </h4>
+    </div>
+
+    <div id="box3">
+      <h3>Tipe-tipe List</h3>
+      <!-- shortcut emmet: ul>li*4 (struktur ul + 4 li item ) -->
+      <!-- ul type: circle, square, none -->
+      <ul type="square">
+        <li>Brokoli</li>
+        <li>Tomat</li>
+        <li>Cabe</li>
+      </ul>
+      <!-- ol type: a, A, i, I -->
+      <ol type="I">
+        <li>Jogja</li>
+        <li>Solo</li>
+        <li>Bandung</li>
+        <li>Lombok</li>
+      </ol>
+    </div>
+  </body>
+</html>

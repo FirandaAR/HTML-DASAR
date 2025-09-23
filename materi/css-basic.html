@@ -1,0 +1,95 @@
+<!-- -- Shorcut HTML -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar CSS dasar</title>
+    <!-- tag style untuk membuat css internal -->
+    <style>
+      /* id dengan simbol pagar # */
+      #box1 {
+        background-color: rgb(102, 245, 0);
+        height: 100px;
+        color: black;
+        padding: 20px;
+      }
+      #box2 {
+        background-color: indigo;
+        color: azure;
+        width: 500px;
+        height: 150px;
+        padding: 20px;
+        margin: 20px;
+      }
+
+      #box2 h3 {
+        text-align: center;
+      }
+
+      #box2 .kelas {
+        font-size: larger;
+      }
+
+      #box2 .kelas span {
+        font-size: 25px;
+      }
+
+      #box3 {
+        width: 300px;
+        height: 200px;
+        background-color: brown;
+      }
+      /* Class dengan simbol titik (.) */
+
+      .header {
+        color: white;
+        background-color: black;
+      }
+      .Isidiv {
+        color: rgb(228, 8, 8);
+        font-size: xx-large;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- pake "fungsi class nya dengan class= "nama class nya" -->
+    <h1>Belajar CSS dasar</h1>
+    <h2>Ini h2</h2>
+    <div id="box1">
+      <h3 class="header">Belajar div boyy</h3>
+      <p class="Isidiv">Ini is div nya boyyy</p>
+    </div>
+    <div id="box2">
+      <h3>My profile</h3>
+      <p>Nama : Agus Sugus</p>
+      <p>Umur : 190 tahun</p>
+      <p class="kelas">Kelas : <span>A</span></p>
+      <h5></h5>
+    </div>
+
+    <div>
+      <h3 style="text-align: center">My profile</h3>
+      <p>Nama : Agus Sugus</p>
+      <p>Umur : 190 tahun</p>
+    </div>
+
+    <div id="box3">
+      <h3>Jenis2 list</h3>
+      <!-- shortcut emmet: ul>li*4 (struktur li + 4 ul) -->
+      <!-- ul type: circle, square, none -->
+      <ul type="square">
+        <li>Brokoli</li>
+        <li>Bayam</li>
+        <li>jagung</li>
+      </ul>
+      <!-- ol type:a,A,i,I -->
+      <ol type="a">
+        <li>GW</li>
+        <li>Saya</li>
+        <li>Me</li>
+        <li>Kulo</li>
+      </ol>
+    </div>
+  </body>
+</html>

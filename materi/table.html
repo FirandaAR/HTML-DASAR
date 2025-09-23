@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Table</title>
+  </head>
+  <body>
+    <h1>Belajar table di HTML</h1>
+    <hr />
+    <table border="1">
+      <tr>
+        <td>Nama</td>
+        <td>Asal Kota</td>
+        <td>Umur</td>
+        <td>Kelas</td>
+      </tr>
+      <tr>
+        <td>Yanto</td>
+        <td>Cirebon</td>
+        <td>18</td>
+        <td>3 SMA</td>
+      </tr>
+      <tr>
+        <td>Utsman</td>
+        <td>Cirebon</td>
+        <td>15</td>
+        <td>1 SMA</td>
+      </tr>
+    </table>
+
+    <!-- struktur yang paling sering dipakai -->
+
+    <h2>Daftar belanja</h2>
+    <table border="1" style="width: 50%">
+      <thead>
+        <tr>
+          <th>No</th>
+          <!--th biar tebel -->
+          <th>Barang</th>
+          <th>Harga</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>tahu gembos</td>
+          <td>500</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Es teh</td>
+          <td>1500</td>
+        </tr>
+      </tbody>
+
+      <tfoot></tfoot>
+    </table>
+    <h2>Kelompok piket</h2>
+    <table 
+      border-collapse; 
+      style="width: 50%"
+      
+      >
+      <thead>
+        <tr>
+          <th rowspan="2">No</th>
+          <th colspan="7">Pekan-1</th>
+        </tr>
+        <tr>
+          <!-- kosongkan td pertama -->
+          <th>Senin</th>
+          <th>Selasa</th>
+          <th>Rabu</th>
+          <th>Kamis</th>
+          <th>Jum'at</th>
+          <th>Sabtu</th>
+          <th>Ahad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>saya</td>
+          <td>udin</td>
+          <td>juna</td>
+          <td>syahid</td>
+          <td>zahran</td>
+          <td>maer</td>
+          <td>tupel</td>
+          <td>azka</td>
+        </tr>
+        <tr>
+          <td>syahid</td>
+          <td>zahran</td>
+          <td>juna</td>
+          <td>tupel</td>
+          <td>maer</td>
+          <td>azka</td>
+          <td>saya</td>
+          <td>udin</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
