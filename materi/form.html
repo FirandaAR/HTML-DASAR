@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="Light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>belajar form HTML</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>HTML 5 Form</h1>
+      <h3></h3>
+      <form>
+        <div>
+          <!-- input kolom input serbaguna -->
+          <!-- tips shorcut input input:[type nya] -->
+          <label for="nama_lengkap">Nama Lengkap</label>
+          <input type="text" name="nama_lengkap" />
+        </div>
+        <div>
+          <label for="Umur">Umur</label>
+          <input type="number" name="Umur" />
+        </div>
+        <div>
+          <!-- input kolom input serbaguna -->
+          <!-- tips shorcut input input:[type nya] -->
+          <label for="tglLahir">Tanggal Lahir</label>
+          <input type="date" name="tglLahir" />
+        </div>
+        <div>
+          <label for="alamatEmail">Alamat Email</label>
+          <input type="email" name="email" id="alamatEmail" />
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+        </div>
+        <div>
+          <label>Jenis Kelamin</label>>
+          <input type="radio" name="jenis_kelamin" id="laki-laki" />
+          <label for="laki-laki">Laki-Laki</label>
+          <input type="radio" name="jenis_kelamin" id="perempuan" />
+          <label for="perempuan">Perempuan</label>
+          <br /><br /><br />
+        </div>
+        <div>
+          <label>Jenis Kelamin</label><br />
+          <input
+            type="radio"
+            name="jenis_kelamin"
+            id="laki-laki"
+            value="Laki-Laki"
+          />
+          <label for="laki-laki">Laki-Laki</label>
+
+          <input
+            type="radio"
+            name="jenis_kelamin"
+            id="perempuan"
+            value="Perempuan"
+          />
+          <label for="perempuan">Perempuan</label>
+        </div>
+        <div>
+          <label>Minat Bahasa</label><br />
+
+          <input
+            type="checkbox"
+            name="bahasa"
+            id="indo"
+            value="Bahasa Indonesia"
+          />
+          <label for="indo">Bahasa Indonesia</label><br />
+
+          <input
+            type="checkbox"
+            name="bahasa"
+            id="inggris"
+            value="Bahasa Inggris"
+          />
+          <label for="inggris">Bahasa Inggris</label><br />
+
+          <input type="checkbox" name="bahasa" id="arab" value="Bahasa Arab" />
+          <label for="arab">Bahasa Arab</label><br />
+
+          <input
+            type="checkbox"
+            name="bahasa"
+            id="jepang"
+            value="Bahasa Jepang"
+          />
+          <label for="jepang">Bahasa Jepang</label>
+        </div>
+        <div>
+          <label for="asalDaerah">Asal Kota</label>
+          <select name="asal_daerah" id="asalDaerah">
+            <option value="PRJ">Purworejo</option>
+            <option value="JKT">Jakarta</option>
+            <option value="BDG">Bandung</option>
+            <option value="NGW">Ngawi</option>
+            <option value="SLO">Solo</option>
+          </select>
+        </div>
+        <div class="grid">
+          <!-- action button -->
+          <button type="reset">Batal</button>
+          <button type="submit">Simpan</button>
+          <button disabled="disabled"></button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

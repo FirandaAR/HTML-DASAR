@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback-SMAIT</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font">
+    <h1 class="judul">Feedback</h1>
+    <h3 class="keterangan">Kritik,Saran,dan Komentar</h3>
+    <hr class="hr" />
+    <div class="navbar">
+      <a href="home.html" class="nav-link">Beranda</a>
+      <a href="biodata.html" class="nav-link">Biodata</a>
+      <a href="jadwal.html" class="nav-link">Jadwal</a>
+      <a href="galeri.html" class="nav-link">Galeri</a>
+      <a href="feedback.html" class="nav-link active">Feedback</a>
+    </div>
+    <hr class="hr" />
+    <section id="feedback" class="form-section">
+      <h2 class="section-title">Formulir Kontak & Saran</h2>
+      <p>
+        Berikan komentar dan saran kalian disini. <br>
+        <i>Aku lebih suka hinaan yang nyata dari pada pujian yang palsu</i> 
+      </p>
+
+      <form action="https://httpbin.org/post" method="post">
+        <!-- Nama -->
+        <label for="nama">Nama Anda (Opsional):</label>
+        <input type="text" id="nama" placeholder="Tulis nama Anda" />
+
+        <!-- Email -->
+        <label for="email">Email Anda:</label>
+        <input type="email" id="email" placeholder="nama@email.com" required />
+
+        <!-- Rating -->
+        <label for="rating">Rating Kepuasan Website (Skala 1-10):</label>
+        <input
+          type="number"
+          id="rating"
+          min="1"
+          max="10"
+          placeholder="Masukkan angka 1 hingga 10"
+          required
+        />
+
+        <!-- Rekomendasi -->
+        <label>Rekomendasi Website Ini?</label>
+        <div class="radio-group">
+          <label
+            ><input type="radio" name="rekomendasi" value="ya" /> Ya,
+            Sangat</label
+          >
+          <label
+            ><input type="radio" name="rekomendasi" value="mungkin" /> Mungkin
+            Saja</label
+          >
+          <label
+            ><input type="radio" name="rekomendasi" value="tidak" />
+            Tidak</label
+          >
+        </div>
+
+        <!-- Topik -->
+        <label>Topik yang paling menarik:</label>
+        <div class="checkbox-group">
+          <label
+            ><input type="checkbox" name="topik" value="biodata" />
+            Biodata</label
+          >
+          <label
+            ><input type="checkbox" name="topik" value="jadwal" /> Jadwal</label
+          >
+          <label
+            ><input type="checkbox" name="topik" value="galeri" /> Galeri</label
+          >
+        </div>
+
+        <!-- Dropdown -->
+        <label for="bidang">Saran Pengembangan di Bidang:</label>
+        <select id="bidang">
+          <option>-- Pilih Bidang --</option>
+          <option>Desain</option>
+          <option>Konten</option>
+          <option>Interaktif</option>
+          <option>Keamanan</option>
+          <option>Service</option>
+        </select>
+
+        <!-- Pesan -->
+        <label for="pesan">Pesan/Saran Lengkap:</label>
+        <textarea
+          id="pesan"
+          rows="4"
+          placeholder="Tulis pesan dan saran Anda secara detail di sini..."
+        ></textarea>
+
+        <!-- Tombol -->
+        <div class="form-buttons">
+          <button type="reset" class="reset-btn">Atur Ulang</button>
+          <button type="submit" class="submit-btn">Kirim Feedback</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
