@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3: Display & Flexbox</title>
+    <!-- pico css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- beri space di kiri-kanan halaman -->
+    <div class="container">
+      <h1>CSS3: Display & Flexbox</h1>
+      <hr />
+
+      <h2>Bagian 1: Display</h2>
+
+      <!-- grid area -->
+      <div class="grid">
+        <!-- card box a -->
+        <div class="card">
+          <code>Display : block</code>
+          <div class="area" id="box-xxxx">
+            <h3>Box 1</h3>
+            <p>(Konten 1)</p>
+          </div>
+          <div class="area" id="box-xxxx">
+            <h3>Box 2</h3>
+            <p>(Konten 2)</p>
+          </div>
+        </div>
+        <!-- end card box a -->
+
+        <!-- card box b -->
+        <div class="card">
+          <code>Display : inline-block</code>
+          <div class="area area-inline-block" id="box-xxxx">
+            <h3>Box 3</h3>
+            <p>(Konten 3)</p>
+          </div>
+          <div class="area area-inline-block" id="box-xxxx">
+            <h3>Box 4</h3>
+            <p>(Konten 4)</p>
+          </div>
+        </div>
+        <!-- end card box b -->
+
+        <!-- card box c -->
+        <div class="card">
+          <code>Display : inline</code>
+          <div class="area area-inline" id="box-xxxx">
+            <p>A1</p>
+            <p>B2</p>
+            <p>C3</p>
+          </div>
+        </div>
+        <!-- end card box c -->
+        <!-- card box d -->
+        <div class="card">
+          <code>Display : none</code>
+          <div class="area area-none" id="box-xxxx">
+            <h3>Liat</h3>
+            <p>(kosong)</p>
+          </div>
+        </div>
+        <!-- end card box d -->
+      </div>
+      <!-- end grid -->
+      <hr />
+      <br />
+      <h2>Bagian 2: Flexbox (basic)</h2>
+      <div class="flexbox-area">
+        <div class="card">
+          <p>Box 1</p>
+        </div>
+        <div class="card">
+          <p>Box 2</p>
+        </div>
+        <div class="card">
+          <p>Box 3  </p>
+        </div>
+        <div class="card">
+          <p>Box 4 </p>
+        </div>
+        <div class="card">
+          <p>Box 5  </p>
+        </div>
+      </div>
+      <br /><br /><br /><br /><br /><br />
+    </div>
+    <!-- end container -->
+  </body>
+</html>

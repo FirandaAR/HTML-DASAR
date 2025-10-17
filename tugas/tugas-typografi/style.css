@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap');
+
+@font-face {
+  font-family: 'Bismillah Script';
+  src: url(fonts/Bismillah\ Script.ttf);
+}
+.arabic-font {
+  font-family: 'Bismillah Script';
+}
+header,
+h1 {
+  font-family: 'BBH Sans Hegarty', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  background-color: cyan;
+  color: black;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  width: 80%;
+  border-radius: 10px;
+}
+
+article {
+  background-color: aliceblue;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 15px;
+  width: 80%;
+  margin: 10px auto;
+  border: 2px solid rgb(127, 121, 121);
+}
+main {
+  font-family: sans-serif;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+blockquote {
+  font-size: 20px;
+  word-spacing: 10px;
+  background-color: rgb(249, 238, 215);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 15px;
+  width: 80%;
+  margin: 10px auto;
+  border-left: 4px solid rgb(255, 204, 93);
+}
+
+.note {
+  text-transform: lowercase;
+  text-decoration: underline;
+  background-color: rgb(249, 225, 215);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 15px;
+  width: 80%;
+  margin: 10px auto;
+  color: red;
+  
+  border-left: 4px solid rgb(245, 90, 24);
+}
+.tebel {
+  color: red;
+  font-weight: bold;
+}
+.penulis {
+  text-align: right;
+}
+footer {
+  text-align: center;
+  color: white;
+  background-color: black;
+}

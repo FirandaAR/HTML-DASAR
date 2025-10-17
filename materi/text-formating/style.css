@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Font Digital';
+    src: url(font/digital-7.ttf);
+}
+@import url();
+.digital {
+    font-style: digital;
+}
+.text-center {
+  text-align: center;
+}
+.text-kiri {
+    text-align: left;
+}
+.text-kanan {
+    text-align: right;
+}
+.text-rata {
+    text-align: justify;
+}
+/* atur ketebalanan */
+.tipis {
+    font-weight: 100;
+}
+.agak-tebal {
+    font-weight: 600;
+    font-size: 30px;
+}
+.tebal {
+    font-weight: bold;
+    font-size: x-large;
+}
+.button-google {
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 4px 6px;
+}
+/* text spacing */
+.pendek {
+    line-height: 1;
+    background-color: aqua;
+}
+.tinggi {
+    line-height: 2;
+    background-color: brown;
+}
+.rapat {
+    letter-spacing: -2px;
+    background-color: bisque;
+}
+.renggang {
+    letter-spacing: 6px;
+    background-color: plum;
+}
+.dekat {
+    word-spacing: -3px;
+    background-color: cadetblue
+}
+.jauh {
+    word-spacing: 6px;
+    background-color: darkcyan;
+}

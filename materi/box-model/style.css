@@ -1,0 +1,106 @@
+.card {
+  background-color: #fafafa;
+  box-shadow: 0px 2px 2px #f4eeee;
+  padding: 6px;
+  text-align: center;
+}
+#box1 {
+  width: 200x;
+  height: 200px;
+  background-color: orange;
+  color: white;
+  line-height: 10;
+}
+#box2 {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  color: white;
+  line-height: 10;
+  /* padding: 12px 10px 12px 10px */
+  /* jarak di dalam box */
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+#box3 {
+  width: 200x;
+  height: 200px;
+  background-color: green;
+  color: white;
+  line-height: 10;
+  /* padding: 12px 10px 12px 10px */
+  /* jarak di dalam box */
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  border: 9px solid aqua;
+}
+#box4 {
+  width: 200x;
+  height: 200px;
+  background-color: gold;
+  color: white;
+  line-height: 10;
+  /* padding: 12px 10px 12px 10px */
+  /* jarak di dalam box */
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  border: 9px solid tomato;
+  /* jarak di luar box */
+  margin: 20px;
+}
+/* css posision */
+#box5 {
+  width: 200x;
+  height: 200px;
+  background-color: hotpink;
+  color: white;
+  line-height: 10;
+}
+#box6 {
+  width: 200x;
+  height: 200px;
+  background-color: greenyellow;
+  color: white;
+  line-height: 10;
+  position: relative;
+  top: 20px;
+  left: 30px;
+  bottom: 20px;
+}
+#box7 {
+  width: 100px;
+  height: 200px;
+  background-color: peru;
+  color: white;
+  line-height: 5;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+#box8 {
+  width: 100px;
+  height: 200px;
+  background-color: yellowgreen;
+  color: white;
+  line-height: 5;
+  position: fixed;
+  top: 20px;
+  left: 30px;
+}
+#box9 {
+  width: 100px;
+  height: 200px;
+  background-color: grey;
+  color: white;
+  line-height: 5;
+  position: sticky;
+  top: 20px;
+  left: 30px;
+}
+
