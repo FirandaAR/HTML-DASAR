@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Components</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Solusi tugas CSS komponent</h1>
+    <div class="container">
+      <div class="alert">
+        <p>ℹ️ Info: Pastikan data Anda sudah lengkap sebelum dikirim.</p>
+        <button class="close" onclick="this.parentElement.style.display='none'">
+          ×
+        </button>
+      </div>
+      <div class="box-profile">
+        <div class="profile-card">
+          <div class="avatar">
+            <img src="assets/user.jpg" alt="User Photo" />
+            <span class="badge"></span>
+          </div>
+          <h3>Jono joni</h3>
+          <p>Frontend Developer</p>
+        </div>
+      </div>
+      <div class="pricing">
+        <div class="plan">
+          <h3>Basic</h3>
+          <p class="price">$31</p>
+          <ul>
+            <li>1 Project</li>
+            <li>Community Support</li>
+          </ul>
+          <button>Pilih Paket hemat</button>
+        </div>
+
+        <div class="plan highlight">
+          <h3>Pro</h3>
+          <p class="price-pro">$59</p>
+          <ul>
+            <li>5 Projects</li>
+            <li>Priority Support</li>
+          </ul>
+          <button>Beli PRO</button>
+        </div>
+
+        <div class="plan">
+          <h3>Enterprise</h3>
+          <p class="price">$99</p>
+          <ul>
+            <li>Unlimited Projects</li>
+            <li>Dedicated Support</li>
+          </ul>
+          <button>Beli Paket Lengkap</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

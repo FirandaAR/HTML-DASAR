@@ -1,0 +1,31 @@
+.card {
+  background-color: #f9f9f9;
+  place-content: center;
+  place-items: center;
+  height: 200px;
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  text-align: center;
+}
+.pro-blue {
+  border: 3px solid blue;
+  width: 250px;
+  height: 250px;
+  align-items: center;
+}
+
+.flexbox-area {
+  /* wajib flex */
+  display: flex;
+  /* jarak antar item */
+  gap: 12px;
+  flex-direction: row;
+  /* atur posisi horizontal */
+  justify-content: center;
+  /* atur penempatan items */
+}
+.alert-info {
+  background: #a0e3fd ;
+  justify-content: space-between;
+}

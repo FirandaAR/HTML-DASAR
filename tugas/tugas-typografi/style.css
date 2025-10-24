@@ -32,6 +32,12 @@ article {
   width: 80%;
   margin: 10px auto;
   border: 2px solid rgb(127, 121, 121);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 9px rgba(1, 1, 1, 0.08);
+}
+article:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 9px rgba(1, 1, 1, 0.08);
 }
 main {
   font-family: sans-serif;
@@ -60,7 +66,7 @@ blockquote {
   width: 80%;
   margin: 10px auto;
   color: red;
-  
+
   border-left: 4px solid rgb(245, 90, 24);
 }
 .tebel {
