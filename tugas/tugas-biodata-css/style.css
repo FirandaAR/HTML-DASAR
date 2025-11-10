@@ -125,7 +125,6 @@
 /* === GALERI STYLE === */
 /* Grid galeri desain */
 .galeri-grid {
-  
   margin: 20px auto;                /* kasih jarak 20px atas-bawah, auto kiri-kanan = ketengah */
   width: 80%;                       /* lebar box 80% dari layar */
   padding: 10px;                    /* jarak isi dari tepi box */
@@ -133,7 +132,6 @@
   border-radius: 10px;              /* sudut box melengkung */
   background-color: #fff;           /* latar belakang putih */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
 }
 
 .card {

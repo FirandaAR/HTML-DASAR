@@ -1,0 +1,371 @@
+/* === GLOBAL === */
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center; /* posisi horizontal */
+  align-items: center; /* posisi vertikal */
+  flex-direction: column; /* biar elemen berurutan ke bawah */
+  min-height: 100vh;
+  margin: 0; /* Hilangkan margin default */
+  padding: 0; /* Hilangkan padding default */
+}
+.logo {
+  display: block; /* Supaya bisa diatur posisi */
+  margin: 20px auto; /* Tengah horizontal + jarak atas bawah */
+  max-width: 100px; /* Batasi ukuran logo */
+}
+
+.judul {
+  color: #47a5ed; /* Warna teks biru muda */
+  text-align: center; /* Rata tengah */
+}
+
+.keterangan {
+  text-align: center; /* Rata tengah teks */
+  color: dimgrey; /* Warna abu gelap */
+}
+
+.section-title {
+  padding-left: 10px; /* Jarak teks dari garis kiri */
+  border-left: 4px solid #f2c308; /* Garis aksen kiri warna kuning */
+  text-align: left; /* Teks rata kiri */
+}
+
+.hr {
+  width: 80%; /* Lebar garis */
+  margin: 15px auto; /* Tengah + jarak atas bawah */
+  border: none; /* Hilangkan border bawaan */
+  height: 1px; /* Ketebalan garis */
+  background-color: #007bff; /* Warna biru */
+  border-radius: 5px; /* Ujung garis melengkung */
+}
+
+/* === BOX / CARD === */
+.box,
+.galeri-grid,
+.video-wrapper,
+.form-section {
+  margin: 20px auto; /* Tengah + jarak atas bawah */
+  width: 80%; /* Lebar kontainer */
+  padding: 10px 20px; /* Ruang dalam */
+  border: 1px solid #ddd; /* Garis pinggir tipis abu */
+  border-radius: 10px; /* Sudut melengkung */
+  background-color: #fff; /* Latar putih */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
+}
+.galery-flex {
+  display: flex;
+  flex-wrap: wrap; /* Wajib agar item bisa turun baris */
+  gap: 15px;
+  margin-top: 15px;
+  /* ganti negative margin supaya tidak menyebabkan overflow/ruang kanan */
+  padding: 7.5px;
+  box-sizing: border-box;
+  align-items: flex-start;
+}
+/* ...existing code... */
+.card {
+  /* --- PROPERTI FLEXBOX RINCI (DETAIL) --- */
+  /* flex-grow: 1 -> Memungkinkan item Tumbuh (memperluas) untuk mengisi ruang kosong yang tersisa. */
+  flex-grow: 1;
+  /* flex-shrink: 0 -> Mencegah item Menyusut di bawah ukuran dasarnya (220px). */
+  flex-shrink: 0;
+  /* flex-basis: 220px -> Lebar Awal (Dasar) yang diinginkan item. */
+  /* Jika container cukup lebar, akan ada minimal 220px, lalu item tumbuh mengisi sisa ruang. */
+  flex-basis: 220px;
+  /* -------------------------------------- */
+
+  width: 80%; /* tetap untuk mobile; atur di media query untuk desktop/tablet */
+  margin: 0; /* gunakan gap dari parent, jangan margin di card */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+.card img {
+  width: 100%; /* Penuhi card */
+  height: 140px; /* Tinggi gambar tetap */
+  object-fit: cover; /* Potong biar proporsional */
+}
+
+.card p {
+  padding: 10px; /* Ruang teks */
+  font-size: 14px; /* Ukuran teks kecil */
+  color: #374151; /* Warna abu tua */
+}
+
+.card:hover {
+  transform: translateY(-6px); /* Naik sedikit saat hover */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Bayangan lebih tegas */
+}
+
+/* === AVATAR === */
+.avatar {
+  width: 100px; /* Lebar foto */
+  height: 100px; /* Tinggi sama → bulat */
+  object-fit: cover; /* Potong agar penuh */
+  border-radius: 50%; /* Bulat sempurna */
+  border: 3px solid #e5e7eb; /* Garis pinggir abu */
+}
+
+/* === NAVBAR === */
+.navbar {
+  display: flex; /* Pakai flexbox */
+  justify-content: center; /* Tengah horizontal */
+  text-align: center; /* Teks di tengah */
+  margin: 20px auto; /* Tengah dengan jarak */
+}
+
+.navbar ul {
+  list-style: none; /* Hilangkan bullet */
+  padding: 0; /* Hilangkan padding default */
+  margin: 0; /* Hilangkan margin default */
+  display: flex; /* Barisan horizontal */
+  gap: 10px; /* Jarak antar item */
+  /* flex-wrap: wrap; Pindah baris jika sempit */
+}
+
+.nav-link {
+  display: inline-block; /* Jadi elemen baris */
+  padding: 6px 16px; /* Ruang dalam tombol */
+  border-radius: 20px; /* Bentuk oval */
+  text-decoration: none; /* Hilangkan garis bawah */
+  font-weight: 500; /* Sedikit tebal */
+  color: #333; /* Warna teks abu tua */
+  background-color: #f8f9fa; /* Latar abu muda */
+  border: 1px solid #ddd; /* Garis halus */
+  transition: all 0.3s ease; /* Animasi hover */
+}
+
+.nav-link:hover {
+  background-color: #e2e6ea; /* Warna hover */
+}
+
+.nav-link.active {
+  background-color: #007bff; /* Warna aktif biru */
+  color: white; /* Teks putih */
+  border-color: #007bff; /* Garis biru */
+}
+
+/* === TABEL JADWAL === */
+.box-table {
+  margin: 20px auto; /* Tengah + jarak atas bawah */
+  width: 80%; /* Lebar kontainer */
+  padding: 10px 20px; /* Ruang dalam */
+  border: 1px solid #ddd; /* Garis pinggir tipis abu */
+  border-radius: 10px; /* Sudut melengkung */
+  background-color: #fff; /* Latar putih */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
+  overflow-x: auto; /* Bisa geser di layar kecil */
+}
+.schedule {
+  border-collapse: collapse; /* Hapus jarak antar sel */
+  margin-top: 15px; /* Jarak atas */
+  font-size: 14px; /* Ukuran teks */
+  min-width: 700px;  /* ubah sesuai kebutuhan konten */
+  width: 100%; /* Penuhi lebar kontainer */
+  overflow-x: auto; /* Bisa geser di layar kecil */
+}
+
+.schedule th,
+.schedule td {
+  border: 1px solid #ddd; /* Garis antar sel */
+  padding: 10px; /* Ruang dalam */
+  text-align: center; /* Rata tengah isi */
+}
+
+.schedule thead th {
+  background-color: #0d6efd; /* Header biru */
+  color: white; /* Teks putih */
+  font-weight: 600; /* Tebal */
+}
+
+.schedule tbody tr:hover {
+  background-color: #f1f1f1; /* Efek hover abu */
+}
+
+/* === VIDEO === */
+.video-wrapper iframe {
+  width: 100%; /* Penuhi lebar kontainer */
+  max-width: 600px; /* Batas maksimum */
+  height: 340px; /* Tinggi tetap */
+  border-radius: 12px; /* Sudut lembut */
+  border: none; /* Tanpa border */
+  display: block; /* Biar bisa ditengahin */
+  margin: auto; /* Tengah */
+}
+
+/* === FORM === */
+.form-section {
+  max-width: 700px; /* Lebar maksimum form */
+  padding: 20px; /* Ruang dalam */
+}
+
+.form-section h2 {
+  margin-bottom: 10px; /* Jarak bawah */
+  color: #1a237e; /* Warna biru tua */
+  font-size: 1.5rem; /* Ukuran besar */
+}
+
+.form-section p {
+  margin-bottom: 20px; /* Jarak antar elemen */
+  color: #444; /* Warna abu gelap */
+}
+
+form > * {
+  display: block; /* Turun ke bawah */
+  width: 100%; /* Penuhi form */
+  margin-bottom: 12px; /* Jarak antar elemen */
+}
+
+label {
+  font-weight: 500; /* Teks agak tebal */
+  margin: 10px 0 5px; /* Jarak atas bawah */
+}
+
+input,
+select,
+textarea {
+  padding: 10px; /* Ruang dalam */
+  border: 1px solid #ccc; /* Garis abu */
+  border-radius: 8px; /* Sudut lembut */
+  font-size: 14px; /* Ukuran teks */
+  transition: all 0.3s ease; /* Efek fokus halus */
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #1a73e8; /* Garis biru saat fokus */
+  box-shadow: 0 0 5px rgba(26, 115, 232, 0.5); /* Efek cahaya */
+  outline: none; /* Hilangkan outline default */
+}
+
+.radio-group label,
+.checkbox-group label {
+  display: inline-block; /* Sejajar horizontal */
+  margin-right: 10px; /* Jarak antar label */
+}
+
+textarea {
+  resize: vertical; /* Bisa diubah tinggi */
+}
+
+.form-buttons {
+  text-align: right; /* Tombol di kanan */
+  margin-top: 15px; /* Jarak atas */
+}
+
+.reset-btn,
+.submit-btn {
+  width: auto; /* Lebar otomatis */
+  padding: 10px 18px; /* Ukuran tombol */
+  border: none; /* Tanpa garis */
+  border-radius: 8px; /* Sudut lembut */
+  cursor: pointer; /* Pointer saat hover */
+  font-size: 14px; /* Ukuran teks */
+  transition: all 0.3s ease; /* Efek hover lembut */
+}
+
+.reset-btn {
+  background: #e0e0e0; /* Abu muda */
+  color: #333; /* Teks gelap */
+}
+
+.reset-btn:hover {
+  background: #c2c2c2; /* Lebih gelap saat hover */
+}
+
+.submit-btn {
+  background: #1a73e8; /* Biru utama */
+  color: white; /* Teks putih */
+}
+
+.submit-btn:hover {
+  background: #155ab6; /* Biru lebih tua saat hover */
+}
+
+/* === BACK LINK === */
+.back-link {
+  display: inline-block; /* Biar bisa diberi margin */
+  margin-top: 20px; /* Jarak atas */
+  color: #007bff; /* Warna biru */
+  text-decoration: none; /* Hilangkan garis bawah */
+  font-weight: 500; /* Sedikit tebal */
+}
+
+.back-link:hover {
+  text-decoration: underline; /* Garis bawah saat hover */
+}
+
+/* === RESPONSIVE === */
+@media screen and (max-width: 767px) {
+  /* Smartphone */
+  .judul {
+    font-size: 1.5rem;
+    display: flex;
+  }
+
+  .navbar {
+    display: flex; /* Gunakan flexbox */
+    flex-direction: column; /* Tumpuk vertikal */
+    align-items: center; /* Pusatkan isi navbar */
+    width: 90%; /* Lebar 90% dari layar */
+    margin: 0 auto; /* Tengah di layar */
+  }
+
+  .navbar ul {
+    display: flex; /* Flex juga untuk menu */
+    flex-direction: column; /* Menu menurun */
+    align-items: stretch; /* Isi lebar penuh dalam navbar */
+    gap: 0.5rem;
+    padding: 12px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .navbar li a {
+    display: block;
+    text-align: center; /* Pusatkan teks */
+    padding: 0.75rem 1rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+  /* Tablet */
+  .card {
+    width: 40%; /* 2 kolom */
+  }
+  .navbar {
+    display: flex; /* Gunakan flexbox */
+    flex-direction: column; /* Tumpuk vertikal */
+    align-items: center; /* Pusatkan isi navbar */
+    width: 90%; /* Lebar 90% dari layar */
+    margin: 0 auto; /* Tengah di layar */
+  }
+
+  .navbar ul {
+    display: flex; /* Flex juga untuk menu */
+    flex-direction: column; /* Menu menurun */
+    align-items: stretch; /* Isi lebar penuh dalam navbar */
+    gap: 0.5rem;
+    padding: 12px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .navbar li a {
+    display: block;
+    text-align: center; /* Pusatkan teks */
+    padding: 0.75rem 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Desktop */
+  .card {
+    width: 23%; /* 4 kolom */
+  }
+}

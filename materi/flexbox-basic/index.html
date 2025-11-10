@@ -1,39 +1,46 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="Light">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
+    <!-- tag meta ini kunci biar bisa responsive  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Box model</title>
-    <!-- add pico css -->
+    <title>CSS3: Responsive Web Design</title>
+    <!-- pico css -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
     />
+    <!-- style css -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+      <!-- intro -->
+      <h1>Toko Bangunan Abang Tjali</h1>
+      <p>
+        Sedia keperluan bangunan mulai dari perkakas, alat berat sampai dengan
+        bata dan seman segala bentuk dan rupa 🔥.
+      </p>
+      <!-- menu navigasi utama -->
+      <nav>
+        <!-- tips : ul>li*5>a -->
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#article">Article</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#feedback">Feedback</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- beri space di kiri-kanan halaman -->
     <div class="container">
-      <h1>CSS3 Flexbox - latihan tugas</h1>
-      <hr />
-      <h2>Latihan satu : Pricing box</h2>
-      <!-- Wadah atau parent dari flexbox -->
-      <div class="flexbox-area">
-        <!-- flexbox item yang ada di dalam -->
-        <div class="card">Basic</div>
-        <div class="card pro-blue">Pro</div>
-        <div class="card">Enterprise</div>
+      <div class="flex-area">
+        <div class="card">A</div>
+        <div class="card">B</div>
+        <div class="card">C</div>
+        <div class="card">D</div>
       </div>
-      <br />
-      <hr />
-      <hr />
-      <h2>Alert info</h2>
-      <div class="flexbox-area">
-        <p class="alert-info">ℹ️ Info: jangan lupa sholat</p>
-        <button type="button" onclick="this.parentElement.style.display='none'">
-          ✖️
-        </button>
-      </div>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </div>
   </body>
 </html>

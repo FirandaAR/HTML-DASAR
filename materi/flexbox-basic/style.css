@@ -1,31 +1,82 @@
 .card {
-  background-color: #f9f9f9;
+  background: #f9f9f9;
+  text-align: center;
   place-content: center;
   place-items: center;
-  height: 200px;
-  width: 200px;
-  border: 1px solid #ddd;
+  height: 250px;
+  width: 250px;
+  border: 2px dashed #333;
   border-radius: 6px;
+}
+.flex-area {
+  display: flex;
+  gap: 20px;
+}
+header {
+  text-align: center;
+  background: indigo;
+}
+header h1,
+header p {
+  color: white;
+}
+nav {
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
-.pro-blue {
-  border: 3px solid blue;
-  width: 250px;
-  height: 250px;
-  align-items: center;
+nav ul {
+  gap: 12px;
+}
+nav ul li a {
+  background: #812abf;
+  color: white;
+  padding: 6px 20px;
 }
 
-.flexbox-area {
-  /* wajib flex */
-  display: flex;
-  /* jarak antar item */
-  gap: 12px;
-  flex-direction: row;
-  /* atur posisi horizontal */
-  justify-content: center;
-  /* atur penempatan items */
+/* ukuran 1024px => desktop++ */
+@media screen and (min-width: 1024px) {
+  /* masukkan tag / target selector */
+  header {
+    background: plum;
+  }
 }
-.alert-info {
-  background: #a0e3fd ;
-  justify-content: space-between;
+
+/* ukuran 768-1023px => tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* masukkan tag / target selector */
+  header {
+    background: blue;
+  }
+}
+
+/* ukuran max 767px => smartphone */
+@media screen and (max-width: 767px) {
+  /* masukkan tag / target selector */
+  nav {
+    display: block;
+    padding-inline: 0;
+    margin: 0;
+  }
+
+  /* Tumpuk item & lebarkan ke kontainer */
+  nav ul {
+    flex-direction: column; /* menurun */
+    align-items: stretch; /* isi lebar penuh */
+    gap: 0.5rem;
+    padding: 12px;
+    margin: 0 !important;
+  }
+
+  nav li {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Link jadi tombol penuh (full width) */
+  nav li a {
+    display: block; /* dari inline → block */
+    padding: 0.75rem 1rem;
+    margin: 0;
+  }
 }

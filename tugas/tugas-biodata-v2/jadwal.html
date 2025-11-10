@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jadwal Harian Santri</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font">
+    <h1 class="judul">Jadwal Harian Santri</h1>
+    <h5 class="keterangan">Pekan ini: Materi HTML & CSS</h5>
+
+    <hr class="hr" />
+
+    <!-- Navigasi -->
+    <div class="navbar">
+      <ul>
+        <li><a href="home.html" class="nav-link">Beranda</a></li>
+        <li><a href="biodata.html" class="nav-link">Biodata</a></li>
+        <li><a href="jadwal.html" class="nav-link active">Jadwal</a></li>
+        <li><a href="galeri.html" class="nav-link">Galeri</a></li>
+        <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+      </ul>
+    </div>
+    <!-- Box tabel -->
+    <div class="box-table">
+      <h3 class="section-title">Jadwal Kegiatan Belajar</h3>
+      <table class="schedule">
+        <thead>
+          <tr>
+            <th colspan="2">Waktu</th>
+            <th rowspan="2">Hari</th>
+            <th rowspan="2">Kegiatan</th>
+          </tr>
+          <tr>
+            <th>Mulai</th>
+            <th>Selesai</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>08:00</td>
+            <td>10:00</td>
+            <td>Senin</td>
+            <td>Belajar HTML 3 Dasar</td>
+          </tr>
+          <tr>
+            <td>10:00</td>
+            <td>10:30</td>
+            <td></td>
+            <td>ISTIRAHAT (Snack & Shalat Dhuha)</td>
+          </tr>
+          <tr>
+            <td>10:30</td>
+            <td>12:00</td>
+            <td>Senin</td>
+            <td>Latihan Praktikum HTML Table</td>
+          </tr>
+          <tr>
+            <td>14:00</td>
+            <td>16:00</td>
+            <td>Selasa</td>
+            <td>Pelajaran Web Dasar (Teori CSS & Box Model)</td>
+          </tr>
+          <tr>
+            <td>16:00</td>
+            <td>16:45</td>
+            <td>Selasa</td>
+            <td>Olahraga (Renang)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
