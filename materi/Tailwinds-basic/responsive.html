@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tailwind CSS Basic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- breakpoints: sm: md: lg: xl: 2xl: -->
+    <!-- responsive text -->
+    <div
+      class="text-center lg:bg-orange-300 md:bg-green-300 sm:bg-blue-300 bg-red-300 p-6 lg:text-6xl md:text-4xl sm:text-2xl text-xl"
+    >
+      HELLO WORLD!
+    </div>
+    <div class="container mx-auto bg-slate-400">
+      <!-- flex-row: arah horizontal -->
+      <!-- justify-beetwen item rata kiri kanan-->
+      <!-- align-center: rata tengah secara vertical -->
+      <header
+        class="flex md:flex-row bg-blue-400 text-white p-4 justify-between items-center"
+      >
+        <h1 class="text-3xl">Sate Pak yanto</h1>
+        <nav class="hidden md:flex md:gap-4 text-sm">
+          <a href="#" class="bg-blue-500 py-1 hover:scale-110 px-4 rounded-md"
+            >Home</a
+          >
+          <a href="#" class="bg-blue-500 py-1 hover:scale-110 px-4 rounded-md"
+            >Blog</a
+          >
+          <a href="#" class="bg-blue-500 py-1 hover:scale-110 px-4 rounded-md"
+            >Contact</a
+          >
+          <a href="#" class="bg-blue-500 py-1 hover:scale-110 px-4 rounded-md"
+            >Contact</a
+          >
+          <a href="#" class="bg-blue-500 py-1 hover:scale-110 px-4 rounded-md"
+            >Contact</a
+          >
+        </nav>
+        <div class="md:hidden text-3xl">
+          <!-- hamburgerr oii TOOOOT -->
+          &#9776;
+        </div>
+      </header>
+      <!-- grid galery foto -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-5 text-center text-white">
+        <div class="bg-blue-300 h-60">Box 1</div>
+        <div class="bg-blue-400 h-60">Box 2</div>
+        <div class="bg-blue-500 h-60">Box 3</div>
+        <div class="bg-blue-600 h-60">Box 4</div>
+        <div class="bg-blue-700 h-60">Box 5</div>
+        <div class="bg-blue-800 h-60">Box 6</div>
+        <div class="bg-blue-900 h-60">Box 7</div>
+      </div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Santri</title>
+
+    <!-- === Bootstrap CSS === -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- === Google Font === -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f8f9fa;
+      }
+      .judul {
+        color: #47a5ed;
+      }
+      .section-title {
+        border-left: 4px solid #f2c308;
+        padding-left: 10px;
+      }
+      .hr {
+        height: 1px;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        width: 80%;
+        margin: 15px auto;
+      }
+    </style>
+  </head>
+
+  <body class="text-center">
+    <div class="container py-4">
+      <h1 class="judul fw-bold">Form Feedback</h1>
+      <h5 class="text-muted">Kami sangat menghargai pendapat dan saranmu!</h5>
+      <hr class="hr" />
+
+      <!-- === NAVBAR === -->
+      <nav class="navbar navbar-expand-md bg-light rounded shadow-sm mb-4">
+        <div class="container justify-content-center">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="home.html" class="nav-link px-3">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a href="biodata.html" class="nav-link px-3">Biodata</a>
+            </li>
+            <li class="nav-item">
+              <a href="jadwal.html" class="nav-link px-3">Jadwal</a>
+            </li>
+            <li class="nav-item">
+              <a href="galeri.html" class="nav-link px-3">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="feedback.html"
+                class="nav-link active text-white bg-primary rounded-pill px-3"
+                >Feedback</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- === FORM SECTION === -->
+      <section class="card shadow mx-auto text-start" style="max-width: 700px">
+        <div class="card-body">
+          <h2 class="mb-3">Form Kritik & Saran</h2>
+          <p class="text-muted">Silakan isi form berikut dengan lengkap.</p>
+
+          <form action="#" method="post">
+            <!-- Nama -->
+            <div class="mb-3">
+              <label for="nama" class="form-label fw-semibold">Nama Lengkap</label>
+              <input
+                type="text"
+                id="nama"
+                name="nama"
+                class="form-control"
+                placeholder="Masukkan nama Anda"
+                required
+              />
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+              <label for="email" class="form-label fw-semibold">Alamat Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                placeholder="nama@email.com"
+                required
+              />
+            </div>
+
+            <!-- Jenis Kelamin -->
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Jenis Kelamin</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gender"
+                  id="laki"
+                  value="Laki-laki"
+                  required
+                />
+                <label class="form-check-label" for="laki">Laki-laki</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gender"
+                  id="perempuan"
+                  value="Perempuan"
+                />
+                <label class="form-check-label" for="perempuan">Perempuan</label>
+              </div>
+            </div>
+
+            <!-- Kelas -->
+            <div class="mb-3">
+              <label for="kelas" class="form-label fw-semibold">Kelas</label>
+              <select id="kelas" name="kelas" class="form-select" required>
+                <option value="">-- Pilih Kelas --</option>
+                <option value="X">X</option>
+                <option value="XI">XI</option>
+                <option value="XII">XII</option>
+              </select>
+            </div>
+
+            <!-- Checkbox minat -->
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Minat Bidang</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="html"
+                  name="minat"
+                  value="HTML"
+                />
+                <label class="form-check-label" for="html">HTML</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="css"
+                  name="minat"
+                  value="CSS"
+                />
+                <label class="form-check-label" for="css">CSS</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="js"
+                  name="minat"
+                  value="JavaScript"
+                />
+                <label class="form-check-label" for="js">JavaScript</label>
+              </div>
+            </div>
+
+            <!-- Pesan -->
+            <div class="mb-3">
+              <label for="pesan" class="form-label fw-semibold">Pesan / Saran</label>
+              <textarea
+                id="pesan"
+                name="pesan"
+                rows="5"
+                class="form-control"
+                placeholder="Tulis masukan Anda di sini..."
+                required
+              ></textarea>
+            </div>
+
+            <!-- Tombol -->
+            <div class="text-end">
+              <button type="reset" class="btn btn-secondary me-2">Reset</button>
+              <button type="submit" class="btn btn-primary">Kirim</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <!-- === Bootstrap JS === -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

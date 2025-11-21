@@ -1,0 +1,209 @@
+/* ========== RESET DAN DASAR ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --background: #e5e9c5;
+  --primary-color: #016b61;
+  --secondary-color: #70b2b2;
+  --text-color: black;
+  --kontras-color: #c9b59c;
+}
+
+html,
+body {
+  background-color: var(--background);
+  color: var(--text-color);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+/* ========== HEADER ========== */
+header {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 12px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 1;
+}
+
+header h1 {
+  position: fixed;
+  top: 6px;
+  left: 5%;
+  font-weight: 600;
+}
+
+header h1 span {
+  color: var(--primary-color);
+}
+
+header h1:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+nav {
+  margin-right: 15%;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  position: fixed;
+  top: 2.5%;
+  right: 5%;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+
+/* ========== MAIN ========== */
+main {
+  margin-top: 80px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20%;
+}
+
+main .hello {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-left: 8%;
+  text-align: left;
+}
+
+main .hello span {
+  display: block;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 2,7rem;
+  margin-bottom: 0;
+}
+
+main .hello h2 {
+  color: var(--text-color);
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+main .hello h3 {
+  color: var(--secondary-color);
+  font-size: 24px;
+  margin-bottom: 10px;
+  padding-left: 0;
+}
+
+main .hello p {
+  color: var(--text-color);
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+main .profile {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px 5px 20px 0;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  text-decoration: none;
+  border-radius: 5px;
+  
+  font-weight: 600;
+}
+.button:hover {
+  background-color: var(--background);
+  color: var(--primary-color);
+  transition: 0.3s;
+  border-color: var(--primary-color);
+  border: 3px solid;
+}
+/* ========== ABOUT SECTION ========== */
+/* ========== ABOUT SECTION ========== */
+section#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  scroll-snap-align: start;
+  padding: 50px 0;
+}
+
+.about-content {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* KONTEN KIRI (kosong atau nanti bisa ditambah foto) */
+.about-header {
+  width: 45%;
+}
+
+/* KONTEN KANAN */
+.about-text {
+  width: 70%;
+  padding-left: 20%;     /* ======= geser ke kanan ======= */
+  text-align: left;
+}
+
+/* JUDUL BESAR */
+.about-text h1 {
+  font-size: 60px;         /* ======= besar seperti contoh ======= */
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+/* PARAGRAF BESAR */
+.about-text p {
+  max-width: 560px;
+  font-size: 19px;
+  line-height: 1.7;
+}

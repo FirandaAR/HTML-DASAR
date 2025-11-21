@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jadwal Harian Santri</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Kustom (Sedikit saja) -->
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f8f9fa;
+      }
+      .judul {
+        color: #47a5ed;
+        text-align: center;
+        font-weight: bold;
+      }
+      .keterangan {
+        text-align: center;
+        color: gray;
+      }
+      .hr {
+        height: 2px;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        width: 75%;
+        margin: 15px auto;
+      }
+      .section-title {
+        border-left: 4px solid #f2c308;
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container py-4">
+      <!-- Judul Halaman -->
+      <h1 class="judul">Jadwal Harian Santri</h1>
+      <h5 class="keterangan">Pekan ini: Materi HTML & CSS</h5>
+      <hr class="hr" />
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-md bg-light rounded shadow-sm mb-4">
+        <div class="container justify-content-center">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="home.html" class="nav-link px-3">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a href="biodata.html" class="nav-link px-3">Biodata</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="jadwal.html"
+                class="nav-link px-3 active bg-primary text-white rounded-pill"
+                >Jadwal</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="galeri.html" class="nav-link px-3">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a href="feedback.html" class="nav-link px-3">Feedback</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Box tabel -->
+      <div class="card shadow">
+        <div class="card-body">
+          <h3 class="section-title mb-3">Jadwal Kegiatan Belajar</h3>
+
+          <table
+            class="table table-bordered table-striped text-center align-middle"
+          >
+            <thead class="table-primary">
+              <tr>
+                <th colspan="2">Waktu</th>
+                <th rowspan="2">Hari</th>
+                <th rowspan="2">Kegiatan</th>
+              </tr>
+              <tr>
+                <th>Mulai</th>
+                <th>Selesai</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>08:00</td>
+                <td>10:00</td>
+                <td>Senin</td>
+                <td>Belajar HTML 3 Dasar</td>
+              </tr>
+              <tr>
+                <td>10:00</td>
+                <td>10:30</td>
+                <td></td>
+                <td>Istirahat (Snack & Shalat Dhuha)</td>
+              </tr>
+              <tr>
+                <td>10:30</td>
+                <td>12:00</td>
+                <td>Senin</td>
+                <td>Latihan Praktikum HTML Table</td>
+              </tr>
+              <tr>
+                <td>14:00</td>
+                <td>16:00</td>
+                <td>Selasa</td>
+                <td>Pelajaran Web Dasar (Teori CSS & Box Model)</td>
+              </tr>
+              <tr>
+                <td>16:00</td>
+                <td>16:45</td>
+                <td>Selasa</td>
+                <td>Olahraga (Renang)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
